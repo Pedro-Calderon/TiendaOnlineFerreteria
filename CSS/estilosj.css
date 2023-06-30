@@ -1,0 +1,428 @@
+.imagenes {
+	width: 200px;
+	height: 150px;
+	display: block;
+  }
+  
+  .contenedor-principal {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    margin-top: 20px !important;
+    
+	}
+	
+	.btn-group-vertical {
+	margin-right: 20px;
+	}
+	
+	.bloques-imagenes {
+	display: flex;
+	}
+
+.btn-group-vertical .btn {
+	margin-top: 20px;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+
+.botones:hover {
+	background-color: #3e8e41;
+}
+:root{
+    --colorPrimario: #000000;
+    --colorSecundario:#ffffff;
+    --cafe:rgb(0, 0, 0);
+    --cafe:#000000;
+    --negro:#000;
+    --blanco:#ffffff;
+    --fuentePrincipal:'Roboto', sans-serif;
+}
+
+/*Etiquetas mas importantes o son para configurar el proyecto como tal, se utiliza para las etiquetas
+*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+}
+
+*,*:before,*::after{
+    box-sizing: inherit;
+}
+
+.contenedor{
+    padding: 1.5rem;
+
+}
+body{
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h1.h2,h3{
+    margin: 0;
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+/*Maximiza lo que mide todoa la pantalla  y centra lo que tiene pero maximiza lo que contienen al 90% del 100%.*/
+.header{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Centra lo que hay en el enxabezado  y se configura tamaños 
+de letra y color y un padding para separarse. el 0 es para los extremos*/
+.header_head{
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 2.5rem 0;
+    color: var(--cafe);
+
+}
+
+/*Se usa el display block para mandar abajo este elemento
+el font weight es el tipo de letra y el sixe es el tamaño
+*/
+.header_bold{
+    display: block;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: var(--negro);
+}
+
+
+/*Se pone el display flex para trabajar con las propiedades de flex
+el direction es para ver que orientacion tendran los
+elementos dentro de este div.
+
+El space araund es como se vera el texto que tenemos 
+en los links, en este caso es centrado pero hay mas propiedades
+*/
+.navegacion_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*Este media query sirve para que apartir de tamaños de tabletas cambie
+el nav, lo que significa una mejor visualizacion, se coloco row para 
+que quepan los elementos en un celular (solo los del  nav)
+*/
+@media(min-width:768px){
+    .navegacion_menu{
+        flex-direction: row;
+    }
+}
+
+/*Esto permite trabajar con el texto del nav, se alineo
+el padin funciona para hacer el padin que se coloca es para que no
+se empalmen cuando este en un movil, y el 13 rem es para que se pueda 
+visualizar un rectangulo cuando entra el hover
+
+El upper case es para combertir en mayusculas, el font es que se mirara en negrtas esas letras
+y la transicion es para que tarde un poco en verse como cambia de color cuando se pasa el cursor
+*/
+.navegacion_enlace{
+    text-align: center;
+    padding: 1.5rem 13.8rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: bold;
+    transition: .3s;
+}
+
+/*El hover es la simulacion de cyaundo se pone el cursor en sima de una
+de las opciones del nav
+*/
+.navegacion_enlace:hover{
+    background-color: var(--colorSecundario);
+}
+
+/*H*/
+ 
+/*Esto es para la seccion de contenido, aqui se pone la imagen
+el 45 rem es lo que abarca, el cover es que la imagen creca lo que mas pueda sin deformarce
+el background position es para centra la imagen
+el 10 rem es como un separador(donde termina).
+*/
+ 
+
+/*Esto es una sombrera que se crea atravez de transparencia lo que es
+bacgroun color
+
+El height y width abarcan el total de contenido, al menos lo maximo que pueda
+*/
+
+.sombra{
+   height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.40);
+}
+
+/*Esto es para poder trabajar sobre la imagen, se usa el mismo tañaño que tiene
+el div padre para trabajar en ese espacio
+el display es para los elementos que se tienen adentro, iran uno debajo del otro
+
+el aling sirve para aliniar horizontalmente
+el justyfy sirve para aliniar verticalmente
+*/
+.h_contenido{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Se cambia el color y tamano, es una etiqueta */
+.h_heading{
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+
+/*Esta media queri solo cambia el tamalo del texto*/
+@media(min-width: 768px){
+    .h_heading{font-size: 5rem;}
+    
+}
+
+/*
+Este es el parrafo, max width limita al texto para que se vea que nmo llega al 
+al final de su contenedor
+*/
+.h_texto{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.5rem;
+    max-width: 90%;
+}
+
+/* El media queri solo cambia el tamaño de el texto y el unset desactiva el 90% */
+@media(min-width: 768px){
+    .h_texto{
+        font-size: 2.5rem;
+        max-width: unset;
+
+    }
+}
+
+/*Se modifico el boton de Contacto
+Se le dio propiedades, el padding nos permite establecer su estado inicial
+el width nos permite modificar su largo pero con el media queri
+modifica su ancho en automatico y lo devuelde a su estado inicial el
+cual es 1.8 rem y 4 rem.
+
+*/
+.boton{
+    background-color: var(--colorPrimario);
+    border-radius: .5rem;
+    padding: 1.8rem 4rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+@media(min-width:768px){
+    .boton{
+        width: auto;
+    }
+}
+
+.boton:hover{
+    background-color: var(--colorSecundario);
+}
+
+/*Catalogo*/
+
+.catalogo{
+    background-color: #f3f3f3;
+}
+
+/*El padin solo se modifico de arriba y de abajo los 0 son de los lados
+
+*/
+.titulo{
+    text-align: center;
+    padding: 6rem 0 4rem 0;
+    color: var(--cafe);
+    font-size: 3.5rem;
+}
+
+/*El media query, cambia el display a grid
+esto para organizar mejor los elementos cuando se este en una
+computadora, el gap es para dar le espacio entre los elementos
+
+repeat dice en cuantos partes iguales  se dividira el grid.
+*/
+@media(min-width:768px){
+    .gridN{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+}
+
+/*Separacion*/
+.c_servios{
+    margin-bottom:4rem ;
+}
+
+/*Creacion de un grid(una tabla)
+En object fit el cover es para que la imagen se agrande pero proporcionalmente sin deformarce
+las transition, es para hacer el efecto de escalar en las imagenes del grid
+*/
+.imagenGrid{
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border: 20px solid var(--blanco);
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+
+/*Esta media query hace que escalen las imagenes*/
+@media(min-width:768px){
+    .imagenGrid:hover{
+        transform: scale(1.1);
+    }
+}
+
+
+/*
+    transform, mueve el div en eje de las Y viendo como si subiera y tapara un poco mas la imagen
+    back ground color se puso gris y la opasidad es del 25% lo que genera una distorcion
+    backdrop filter hace como si se viera como un vidrio el div.
+*/
+.c_descripcion{
+    -webkit-transform:translateY(-5.5rem);
+    background-color: rgb(255, 255, 255, 0.25);
+    max-width: 90%;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    /*border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    */
+
+}
+
+/*Solo se le da formato y espaciado*/
+.c_descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+/*centra este elemmento y elimina los margenes*/
+.texto{
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+}
+
+
+.servicios_enlaces{
+    padding: 2rem;
+    background-color: var(--colorPrimario);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blanco);
+    transition: .3s;
+}
+
+@media(min-width: 768px){
+    .servicios_enlaces:hover{
+        background-color: var(--colorSecundario);
+    }
+
+}
+
+/*Otro apartado de html*/
+
+.inia{
+    margin-bottom: 4rem;
+}
+/*Margin El 0 es para los lados*/
+.inicia{
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 3rem;
+    color: white;
+}
+
+/*Se da espaciado al div que sera el grid
+Se ;e agrega una sombre para hacerlo resaltar
+y se le da un espaciado gap
+*/
+.gridInicia{
+    padding: 4rem 2rem;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+    display: grid;
+    gap: 3rem;
+}
+
+/*El media query acomoda el grid en columna para que se ve mas agradable cuando se visualiza en una computadora*/
+@media(min-width:768px){
+    .gridInicia{
+        grid-template-columns: repeat(2, 1fr);
+        /*align-items: center ;*/
+    }
+}
+
+.textoParrafo{
+    line-height: 1.8;
+    color: rgb(179, 115, 115);
+   /* margin: 0;*/
+}
+
+/*El display block hace que ocupe todo el e,spacio es lo que hace el elemento de bloque */
+
+.iniciaBoton{
+    background-color: var(--colorPrimario);
+    display: block;
+    padding: 1.8rem 3rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2.5rem;
+    transition: .3s;
+}
+
+
+@media(min-width:768px){
+    .iniciaBoton{display: inline-block;}
+    .iniciaBoton:hover{background-color: var(--colorSecundario);}
+}

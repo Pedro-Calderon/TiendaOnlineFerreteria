@@ -1,0 +1,174 @@
+
+#logo{
+  border-radius: 50% !important;
+}
+
+.ui-pdp-description__content {
+  color: #666 !important;
+  font-size: 20px !important;
+}
+.login-form {
+  width: 750px;
+  height: 550px;
+  margin: 200px auto;
+  padding: 4rem !important;
+  font-size: 15px;
+  margin-top: 1rem;
+  
+  
+}
+
+.login-form form {
+  margin-bottom: 25px;
+  background: #f7f7f7;
+
+  padding: 60px;
+}
+#Contacto {
+  text-align: right;
+
+}
+
+#login {
+  margin-left: 10px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper img{
+  width: 100%;
+  object-fit: cover;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next{
+  --swiper-navigation-size: 20px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  margin-top: -35px;
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+.swiper .swiper-button-prev{
+  border-radius: 0 65px 65px 0;
+  left: -10px;
+}
+.swiper .swiper-button-next{
+  border-radius: 65px 0 0 65px ;
+  right: -10px;
+}
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next{
+  opacity: 1;
+}
+.swiper .swiper-pagination{
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-size: 6px;
+  --swiper-pagination-bullet-inactive-color: #606060;
+  --swiper-pagination-bullet-inactive-opacity: 0.25;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 2px;
+} 
+.swiper .swiper-pagination-bullet{
+  box-shadow: 0 0 0 1px #606060;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 45px 0px;
+  
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 h2{
+    color: #dd8f46;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    
+}
+
+
+.acerca-p {
+  text-align: center !important;
+
+  letter-spacing: 0 !important;
+  color: #ffffff !important;
+}
+
+.acerca-p .acerca-orange {
+  text-align: center !important;
+ 
+  letter-spacing: 0 !important;
+  color: #f60 !important;
+  font-weight: bold !important;
+}
+
+.box1{
+
+  text-align: center;
+}

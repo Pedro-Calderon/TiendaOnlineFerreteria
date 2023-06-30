@@ -1,0 +1,41 @@
+
+.form{
+    justify-content: center;
+      max-width: 600px;
+    
+  }
+  .c_servios {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .imagenGrid {
+      width: 350px;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .imagenGrid:hover {
+      transform: scale(1.05);
+    }
+  
+    .c_contenido {
+      margin-left: 10px;
+    }
+  
+    .servicios_enlaces {
+      display: inline-block;
+      padding: 20px 20px;
+      
+      margin-left: 10px;
+      background-color: #4c6faf;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .servicios_enlaces:hover {
+      background-color: #45a049;
+    }
